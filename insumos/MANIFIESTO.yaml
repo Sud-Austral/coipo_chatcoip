@@ -1,0 +1,29 @@
+# Manifiesto derivado del codigo. Una entrada por archivo relevante de la
+# evidencia. El repositorio tiene tres archivos en total y los tres estan aqui.
+
+archivos:
+
+  - ruta: README.md
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin patron de dato personal detectable: el archivo pesa 18 bytes y su unico contenido registrado en la evidencia es el titulo del repositorio; conteo de coincidencias 0"
+    puede_versionarse: true
+    uso: "[INFERIDO] documentacion del repositorio; la evidencia lo lista como archivo clave y como README existente [README.md]"
+
+  - ruta: .github/workflows/readme.yml
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin patron de dato personal detectable en la evidencia; conteo de coincidencias 0. No se leyo el contenido del archivo, solo su ruta y tamano"
+    puede_versionarse: true
+    uso: "[INFERIDO] flujo de integracion continua; la evidencia lo clasifica bajo archivos de despliegue [.github/workflows/readme.yml]"
+
+  - ruta: .gitattributes
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin patron de dato personal detectable en la evidencia; conteo de coincidencias 0"
+    puede_versionarse: true
+    uso: "[INFERIDO] configuracion de tratamiento de archivos por parte de Git; deducido de que la evidencia lo lista en la raiz del repositorio [.gitattributes]"
+
+pendientes_del_manifiesto:
+  - "[PENDIENTE] No hay manifiestos de dependencias declarados en la evidencia (npm, python u otro), por lo que no hay entradas de ese tipo que sellar."
+  - "[PENDIENTE] No hay archivos de datos, semillas ni configuracion de entorno en la evidencia."
